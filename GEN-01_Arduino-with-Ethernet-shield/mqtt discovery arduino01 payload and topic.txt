@@ -1,0 +1,17 @@
+mqtt discovery arduino01 payload and topic
+
+homeassistant/switch/7698f195c28c/relay1/config
+{
+    "name": "relay1",
+    "state_topic": "arduino01/relay1/state",
+    "command_topic": "arduino01/relay1/com",
+    "availability_topic": "arduino01/status",
+    "unique_id": "arduino01_relay1",
+    "device": {
+        "identifiers": "7698f195c28c",
+        "name": "arduino01",
+        "sw_version": "v1.1",
+        "model": "Arduino Uno",
+        "manufacturer": "ILMI-TECH"
+    }
+}

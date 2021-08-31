@@ -1,0 +1,134 @@
+UID: mqtt:topic:7c90155408:55cbb616bf
+label: arduino_ethernet_01
+thingTypeUID: mqtt:topic
+configuration:
+  payloadNotAvailable: offline
+  availabilityTopic: arduino01/status
+  payloadAvailable: online
+bridgeUID: mqtt:broker:7c90155408
+channels:
+  - id: relay1
+    channelTypeUID: mqtt:switch
+    label: relay1
+    description: null
+    configuration:
+      commandTopic: arduino01/relay1/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay1/state
+      off: OFF
+      on: ON
+  - id: relay2
+    channelTypeUID: mqtt:switch
+    label: relay2
+    description: null
+    configuration:
+      commandTopic: arduino01/relay2/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay2/state
+      off: OFF
+      on: ON
+  - id: relay3
+    channelTypeUID: mqtt:switch
+    label: relay3
+    description: null
+    configuration:
+      commandTopic: arduino01/relay3/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay3/state
+      off: OFF
+      on: ON
+  - id: relay4
+    channelTypeUID: mqtt:switch
+    label: relay4
+    description: null
+    configuration:
+      commandTopic: arduino01/relay4/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay4/state
+      off: OFF
+      on: ON
+  - id: relay5
+    channelTypeUID: mqtt:switch
+    label: relay5
+    description: null
+    configuration:
+      commandTopic: arduino01/relay5/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay5/state
+      off: OFF
+      on: ON
+  - id: relay6
+    channelTypeUID: mqtt:switch
+    label: relay6
+    description: null
+    configuration:
+      commandTopic: arduino01/relay6/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay6/state
+      off: OFF
+      on: ON
+  - id: relay7
+    channelTypeUID: mqtt:switch
+    label: relay7
+    description: null
+    configuration:
+      commandTopic: arduino01/relay7/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay7/state
+      off: OFF
+      on: ON
+  - id: relay8
+    channelTypeUID: mqtt:switch
+    label: relay8
+    description: null
+    configuration:
+      commandTopic: arduino01/relay8/com
+      retained: true
+      qos: 1
+      stateTopic: arduino01/relay8/state
+      off: OFF
+      on: ON
+  - id: temperature
+    channelTypeUID: mqtt:number
+    label: temperature
+    description: null
+    configuration:
+      unit: °C
+      min: 0
+      stateTopic: arduino01/temp/state
+      max: 100
+  - id: humidity
+    channelTypeUID: mqtt:number
+    label: humdity
+    description: null
+    configuration:
+      unit: "%"
+      min: 0
+      stateTopic: arduino01/hum/state
+      max: 100
+  - id: ldr
+    channelTypeUID: mqtt:number
+    label: ldr
+    description: null
+    configuration:
+      stateTopic: arduino01/ldr/state
+      unit: Lx
+  - id: pir
+    channelTypeUID: mqtt:string
+    label: pir
+    description: ""
+    configuration:
+      stateTopic: arduino01/pir/state
+  - id: motion
+    channelTypeUID: mqtt:string
+    label: motion
+    description: ""
+    configuration:
+      stateTopic: arduino01/motion/state
